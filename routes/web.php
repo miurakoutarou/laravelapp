@@ -13,4 +13,10 @@
 //第一引数　アドレス　第二引数　関数Route::get('hello', 'HelloController@index');
 //public function index()
 Route::get('hello', 'HelloController@index');
-Route::post('hello', 'HelloController@post');
+// Route::post('hello', 'HelloController@post');
+
+//---------実習用------------
+
+//jissyu3_1
+Route::get('jissyu3', 'Jissyu3_1Controller@index');
+Route::post('jissyu3', 'Jissyu3_1Controller@post');
