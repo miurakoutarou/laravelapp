@@ -20,3 +20,4 @@ Route::post('hello', 'HelloController@post');
 //jissyu3_1
 Route::get('jissyu3', 'Jissyu3_1Controller@index');
 Route::post('jissyu3', 'Jissyu3_1Controller@post');
+
