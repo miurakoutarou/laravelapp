@@ -20,3 +20,15 @@ Route::post('hello', 'HelloController@post');
 //jissyu3_1
 Route::get('jissyu3', 'Jissyu3_1Controller@index');
 Route::post('jissyu3', 'Jissyu3_1Controller@post');
+
+Route::get('hello/add', 'HelloController@add');
+Route::post('hello/add', 'HelloController@create');
+
+Route::get('hello/edit', 'HelloController@edit');
+Route::post('hello/edit', 'HelloController@update');
+
+Route::get('hello/del', 'HelloController@del');
+Route::post('hello/del', 'HelloController@remove');
+
+Route::get('hello/show', 'HelloController@show');
+
