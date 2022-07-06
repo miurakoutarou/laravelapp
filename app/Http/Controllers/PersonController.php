@@ -24,9 +24,10 @@ public function find(Request $request)
 
 public function search(Request $request)
 {
-   $item = Person::find($request->input);
+   $item = Person::where('name', $request->input)->first();
    $param = ['input' => $request->input, 'item' => $item];
    return view('person.find', $param);
 }
+
 
 }
