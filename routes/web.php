@@ -50,3 +50,7 @@ Route::get('board', 'BoardController@index');
 
 Route::get('board/add', 'BoardController@add');
 Route::post('board/add', 'BoardController@create');
+//ルート情報の追記p299
+Route::resource('rest', 'RestappController');
+//p303
+Route::get('hello/rest', 'HelloController@rest');

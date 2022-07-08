@@ -6,6 +6,7 @@ use App\Person;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Builder;
 use App\Scopes\ScopePerson; 
+use App\Restdata;
 class PersonController extends Controller
 {
    public function index(Request $request)

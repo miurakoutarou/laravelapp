@@ -84,7 +84,10 @@ public function remove(Request $request)
    return redirect('/hello');
 }
 
-
+public function rest(Request $request)
+{
+   return view('hello.rest');
+}
 
 
 

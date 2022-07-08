@@ -7,14 +7,17 @@
 
 <?php $__env->startSection('content'); ?>
    <table>
-   <tr><th>Data</th></tr>
+   <tr><th>Message</th><th>Name</th></tr>
    <?php $__currentLoopData = $items; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
        <tr>
-           <td><?php echo e($item->getData()); ?></td>
+           <td><?php echo e($item->message); ?></td>
+           <td><?php echo e($item->person->name); ?></td>
        </tr>
    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
    </table>
 <?php $__env->stopSection(); ?>
+
+
 
 <?php $__env->startSection('footer'); ?>
 copyright 2020 tuyano.
